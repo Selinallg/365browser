@@ -10,13 +10,20 @@ android {
 //    buildToolsVersion '26.0.2'
 //    enforceUniquePackageName false
     defaultConfig {
-        applicationId "com.mogoweb.browser"
+        applicationId "com.nolovr.browser"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 16
         versionName "6.0.0"
 
         multiDexEnabled true
+
+        ndk {
+//            abiFilters "armeabi-v7a"
+            abiFilters "arm64-v8a"
+//            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+//        arm64-v8a
     }
 
     sourceSets {
